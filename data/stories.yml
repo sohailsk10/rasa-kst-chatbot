@@ -1,0 +1,42 @@
+version: "3.1"
+
+stories:
+
+  - story: path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: booking
+      - action: utter_enquiry_room_no
+      - intent: room_no
+        entities:
+          - number_of_rooms
+      - action: utter_enquiry_room_type
+      - action: room_form
+      - active_loop: room_form
+      - slot_was_set:
+          - room_type: simple
+      - action: utter_confirmation
+      - intent: affirm
+      - action: utter_done
+#
+#- story: sad path 1
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: affirm
+#  - action: utter_happy
+#
+#- story: sad path 2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: deny
+#  - action: utter_goodbye
+#

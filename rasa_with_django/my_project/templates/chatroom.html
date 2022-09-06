@@ -1,0 +1,45 @@
+{% load static %}
+<head>
+  <link rel="stylesheet" href="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.css" />
+</head>
+<body>
+  <div class="chat-container"></div>
+  <img src="https://media-exp1.licdn.com/dms/image/C511BAQHmgoOKBHpi5Q/company-background_10000/0/1556046927765?e=2147483647&v=beta&t=4ogDeH5anCkwde85wEPoBWNEOUQ0xBQOAbNrKH3vHCc"/>
+
+<!--  <script src="E:\Office_project\web_v1\js\index2.js"/></script>-->
+<!--  <script src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js"/></script>-->
+<!--  <script type="text/javascript">-->
+<!--    var chatroom = new window.Chatroom({-->
+<!--      host: "http://localhost:5005",-->
+<!--      title: "Rasa Assistant",-->
+<!--      container: document.querySelector(".chat-container"),-->
+<!--      welcomeMessage: "Hi, I am Mike. How may I help you?",-->
+<!--      speechRecognition: "en-US",-->
+<!--      voiceLang: "en-US"-->
+<!--    });-->
+<!--    chatroom.openChat();-->
+<!--  </script>-->
+<script>!(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+    // Replace 1.x.x with the version that you want
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        {
+          initPayload: "/greet",
+          customData: { language: "en" },
+          socketUrl: "http://localhost:5005",
+
+          // add other props here
+        },
+        null
+      );
+    }),
+    t.insertBefore(e, t.firstChild);
+})();
+localStorage.clear();
+</script>
+</body>
