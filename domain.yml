@@ -131,7 +131,7 @@ responses:
   utter_charge_AMC:
   - text: 'AMC cost will depend on the services to be provided and the Hardware to be maintained. Based on initial assessment we can share the estimate. '
   utter_ceo_image:
-  - image: imran_kazi.jpeg
+  - image: "https://kernelspheretech.com/wp-content/uploads/2020/09/member-6.jpg"
     text: Imran Kazi is the Founder and Managing Director of KernelSphere Technologies
   utter_address_india:
   - text: 17A, Dattani Plaza, Andheri Kurla Road, Saki Naka, Near Safed Pool, Mumbai
