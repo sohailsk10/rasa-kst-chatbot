@@ -219,6 +219,66 @@ stories:
   - intent: contact_number
   - action: utter_contact_number
 
+- story: antivirus
+  steps:
+  - intent: antivirus
+  - action: utter_antivirus
+
+- story: UPS
+  steps:
+  - intent: UPS
+  - action: utter_UPS
+
+- story: firewalls
+  steps:
+  - intent: firewalls
+  - action: utter_firewalls
+
+- story: checkpoint_firewall
+  steps:
+  - intent: checkpoint_firewall
+  - action: utter_checkpoint_firewall
+
+- story: CCTV_installation
+  steps:
+  - intent: CCTV_installation
+  - action: utter_CCTV_installation
+
+- story: structured_cabling
+  steps:
+  - intent: structured_cabling
+  - action: utter_structured_cabling
+  - intent: location
+  - action: utter_location
+
+- story: server_installation_services
+  steps:
+  - intent: server_installation_services
+  - action: utter_server_installation_services
+  - intent: onsite_service
+  - action: utter_onsite_service
+
+- story: servers
+  steps:
+  - intent: servers
+  - action: utter_servers
+  - intent: physical_server
+  - action: utter_physical_server
+  - intent: brand
+  - action: utter_brand
+
+- story: servers
+  steps:
+  - intent: servers
+  - action: utter_servers
+  - intent: virtual_server
+  - action: utter_virtual_server
+  - intent: cloud_platform
+  - action: utter_cloud_platform
+
+
+
+
 #- story: bench_size
 #  steps:
 #  - intent: bench_size

@@ -255,3 +255,70 @@ nlu:
     - How can i contact you?
     - Whats your contact number?
     - Contact number
+
+- intent: antivirus
+  examples: |
+    - Do you sell antivirus?
+
+- intent: UPS
+  examples: |
+    - Do you have UPS?
+
+- intent: firewalls
+  examples: |
+    - Do you sell Firewalls?
+    - Do you deal in firewalls?
+
+
+- intent: checkpoint_firewall
+  examples: |
+    - What is the price for checkpoint firewall? Similarly for other brands also.
+
+- intent: CCTV_installation
+  examples: |
+    - Do you have CCTV installation team?
+    - can you do CCTV installation?
+
+- intent: structured_cabling
+  examples: |
+    - Do you do structured cabling?
+
+- intent: location
+  examples: |
+    - the location is in Dubai?
+    - the location is in India?
+
+- intent: server_installation_services
+  examples: |
+    - Do you provide server installation services?
+
+- intent: onsite_service
+  examples: |
+    - could you please share the price for onsite service?
+
+- intent: servers
+  examples: |
+    - Do you deal in servers?
+
+- intent: physical_server
+  examples: |
+    - I need a physical server?
+
+- intent: brand
+  examples: |
+    - which brands do you have?
+
+
+- intent: virtual_server
+  examples: |
+    - I need a virtual server?
+
+- intent: cloud_platform
+  examples: |
+    - Azure
+    - AWS
+
+
+
+
+
